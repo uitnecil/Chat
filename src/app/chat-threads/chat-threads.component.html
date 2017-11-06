@@ -1,0 +1,7 @@
+<div class="threads-defaults">
+  <div class="threads-header">Open Threads</div>
+  <app-chat-thread
+    *ngFor="let thread of threads | async"
+    [thread]=thread>
+  </app-chat-thread>
+</div>

@@ -1,0 +1,20 @@
+<div>
+  <div class="spacing">
+    <mat-slide-toggle
+      class="example-margin"
+      [checked]="true"
+      (change)="doIt($event)">
+      Enable Chat window movement
+    </mat-slide-toggle>
+  </div>
+  <app-chat-unread></app-chat-unread>
+  <app-chat-threads appMoveMe ></app-chat-threads>
+
+  <app-chat-window class="chat-window"
+                   appMoveMe
+                   [allowControlToBeMoved]="checkboxStatus"
+                   (coordinates)="logMe($event)"
+                   (status)="processStatus($event)"
+                   [class.dragging]="dragging"
+  ></app-chat-window>
+</div>

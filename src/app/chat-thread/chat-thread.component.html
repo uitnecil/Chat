@@ -1,0 +1,11 @@
+<div class="flex-row" (click)="click($event)" [ngClass]="{'no-border': !selected, 'border': selected}">
+  <div  class="d1">
+    <img src="{{thread.avatarSrc}}" alt="" style="width: 75px; height: auto">
+  </div>
+  <div class="d2 flex-column">
+    <h5>{{thread.name}}
+      <span *ngIf="selected">&bull;</span>
+    </h5>
+    <small>{{thread.lastMessage.text}}</small>
+  </div>
+</div>

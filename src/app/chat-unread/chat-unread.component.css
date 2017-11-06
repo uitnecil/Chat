@@ -1,0 +1,36 @@
+.style-counter-header {
+  display: flex;
+  flex-flow: row nowrap;
+  /*align-content: center;*/
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 1px solid rgba(48,204,255,0.98);
+  box-shadow: 2px 2px 2px 2px lightgray;
+}
+
+.style-counter-container {
+  display: flex;
+  flex-flow: row nowrap;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+  background-color: #2e6da4;
+  color: white;
+
+  margin: 5px;
+  padding: 0 5px;
+
+  font-weight: bold;
+}
+
+.style-counter {
+  border: 1px solid blue;
+  background: white;
+  border-radius: 30%;
+  color: #2e6da4;
+
+  margin: 5px;
+  padding: 0 5px;
+}

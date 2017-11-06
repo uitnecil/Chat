@@ -1,0 +1,6 @@
+<div [ngClass]="{'me': me, 'not-me': !me}">
+  <img [src]=message.author.avatarSrc alt="" style="width: 75px; height: auto; margin: 5px;">
+  <div style="margin: 5px;">
+  <b>{{message.author.name}}</b> : {{message.text}}
+  </div>
+</div>
